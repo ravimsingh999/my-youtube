@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
+  //const [filteredVideos, setFilteredVideos] = useState([]);
 
   useEffect(() => {
     getVideos();
@@ -14,13 +15,14 @@ const VideoContainer = () => {
     const data = await fetch(YOUTUBE_VIDEO_API);
     const json = await data.json();
     setVideos(json.items);
+    //setFilteredVideos(json.items);
   };
 
   return (
     <div className="flex flex-wrap">
       {videos.map((video) => (
-        <Link to={"/watch?v=" + video.id}>
-          <VideoCard key={video.id} info={video} />
+        <Link key={video.id} to={"/watch?v=" + video.id}>
+          <VideoCard info={video} />
         </Link>
       ))}
     </div>
