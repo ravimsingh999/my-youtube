@@ -1,4 +1,4 @@
-This app is basically a you tube clone where a User can go and watch videos. hosted on https://ravi-youtube-clone.netlify.app/
+This app is basically a you tube clone where a User can go and watch videos. hosted on https://ravi-youtube.netlify.app/
 1. Getting videos from you-tube videos API.
 2. Used Redux for Side Bar toggle.
 3. Getting search suggestions from you-tube search api & applied debouncing on search and used caching on search-suggestion for performence enhancement.
