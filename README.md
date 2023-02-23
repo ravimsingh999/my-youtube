@@ -1,3 +1,13 @@
+This app is basically a you tube clone where a User can go and watch videos. hosted on https://ravi-youtube-clone.netlify.app/
+1. Getting videos from you-tube videos API.
+2. Used Redux for Side Bar toggle.
+3. Getting search suggestions from you-tube search api & applied debouncing on search and used caching on search-suggestion for performence enhancement.
+4. Implemented nested comment feature like Reddit.
+5. Implemented live chat throw like(API polling), feels like you tube live chat.
+6. Used Redux for storing live chats and search results.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
