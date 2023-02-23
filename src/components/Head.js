@@ -62,11 +62,15 @@ const Head = () => {
             placeholder="Search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            onFocus={() => setShowSuggestion(true)}
-            onBlur={() => setShowSuggestion(false)}
+            onMouseOver={() => setShowSuggestion(true)}
+            onMouseOut={() => setShowSuggestion(false)}
           />
           {showSuggestion && (
-            <div className="fixed bg-white w-96 rounded-lg absolute">
+            <div
+              className="fixed bg-white w-96 rounded-lg absolute"
+              onMouseOver={() => setShowSuggestion(true)}
+              onMouseOut={() => setShowSuggestion(false)}
+            >
               <ul>
                 {searchSuggestions.map((name) => (
                   <li
